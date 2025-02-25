@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <conio.h>
 
 int main() {
     // code
@@ -11,5 +12,6 @@ int main() {
 
     std::cout << "La suma de los cuadrados de los 10 primeros numeros enteros es: " << num << std::endl;
 
+    getch();
     return 0;
 }
