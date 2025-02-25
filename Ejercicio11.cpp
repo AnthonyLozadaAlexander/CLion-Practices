@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 
 int main() {
     // code: do while
@@ -20,6 +19,6 @@ int main() {
         j = j - 1; // disminucion del iterador de uno en uno hasta llegar a 1
     }while (j >= 1);
 
-    getch();
+    system("pause");
     return 0;
 }
