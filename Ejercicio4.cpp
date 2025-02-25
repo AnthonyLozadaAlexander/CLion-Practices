@@ -10,5 +10,6 @@ int main() {
     }while (num < 0);
 
     std::cout << "El numero positivo ingresado es: " << num << std::endl;
+
     return 0;
 }
