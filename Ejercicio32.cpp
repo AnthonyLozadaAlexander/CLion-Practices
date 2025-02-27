@@ -9,7 +9,7 @@ int main() {
     int i, j, aux;
 
     std::cout << "--------------------------------" << std::endl;
-    std::cout << "Datos Originales: " << std::endl
+    std::cout << "Datos Originales: " << std::endl;
 
     for (i = 0; i < 5; i++) {
         std::cout << "Datos["<<i<<"]: "<< datos[i] << std::endl;
