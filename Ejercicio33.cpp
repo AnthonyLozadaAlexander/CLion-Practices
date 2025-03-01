@@ -1,6 +1,7 @@
 //
 // Created by zDefcon on 28/02/2025.
 //
+#include <conio.h>
 #include <iostream>
 
 int main() {
@@ -13,10 +14,12 @@ int main() {
     std::cout << "--------------------------------\n" << std::endl;
 
     for (int i = 0; i < 5; i++) {
-        std::cout << "num["<<i<<"] = " << num[i] << std::endl;
+        std::cout << "num["<< i <<"] = " << num[i] << std::endl;
         std::cout << num[i] << " + " << suma << std::endl;
         suma = suma + num[i];
         std::cout << " = " << suma << std::endl;
     }
+
+    getch();
     return 0;
 }
