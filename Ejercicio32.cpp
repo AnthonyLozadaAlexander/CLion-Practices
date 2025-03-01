@@ -18,7 +18,8 @@ int main() {
     // Bubble Sort [Ordenamiento Burbuja]
     for (i = 0; i < 5; i++) {
         for (j = 1; j < 5; j++) {
-            if (datos[j-1] > datos[j]) {
+            if (datos[j-1] > datos[j])
+            {
                 aux = datos[j-1];
                 datos[j-1] = datos[j];
                 datos[j] = aux;
