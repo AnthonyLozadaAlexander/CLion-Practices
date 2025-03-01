@@ -30,10 +30,10 @@ int main() {
     }
 
     cout << "\n----------------------------------------" << endl;
-    cout << "Los elementos del inversos del arreglo son: " << endl;
+    cout << "Los elementos inversos del arreglo son: " << endl;
     cout << "----------------------------------------" << endl;
 
-    for (int i = 5 - 1; i >= 0; i--) {
+    for (int i = n - 1; i >= 0; i--) {
 
         cout << "Numeros[" << i << "] -> " << numeros[i] << endl;
 
