@@ -19,13 +19,20 @@ int main() {
         if (nums[i] > mayor) {
             mayor = nums[i];
         }
+        if (i == 5-1) {
+            std::cout << "------------------------------------" << std::endl;
+            std::cout << "El Elemento Mayor Del Arreglo Es: " << mayor << std::endl;
+
+        }
         if (nums[i] < menor) {
             menor = nums[i];
         }
+        if (i == 5-1) {
+
+            std::cout << "El Elemento Menor Del Arreglo Es: " << menor << std::endl;
+            std::cout << "------------------------------------" << std::endl;
+        }
     }
-    std::cout << "--------------------------" << std::endl;
-    std::cout << "El Elemento Mayor Del Arreglo Es: " << << mayor << std::endl;
-    std::cout << "El Elemento Menor Del Arreglo Es: " << menor << std::endl;
 
     system("pause");
     return 0;
