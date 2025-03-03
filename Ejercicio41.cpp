@@ -2,17 +2,17 @@
 // Created by zDefcon on 02/03/2025.
 //
 #include <iostream>
+#include <limits>
 
+float incremento(float x) {
 
-float incremento(float salario) {
-
-    return salario * 0.25f;
+    return x * 0.25f;
 
 }
 
 int main() {
     // code
-    float Salario, Incremento;
+    float Salario;
     do {
         std::cout << "--------------------------" << std::endl;
         std::cout << "Ingresa tu salario: "; std::cin >> Salario;
@@ -38,12 +38,10 @@ int main() {
         }
     }while (Salario <= 0);
 
-Incremento(Salario);
-
     std::cout << "--------------------------" << std::endl;
     std::cout << "Tu salario es de: " << Salario << std::endl;
-    std::cout << "Mas un incremento del 25% el cual es de: " << Incremento << std::endl;
-    std::cout << "Salario Total: " << Salario + Incremento << std::endl;
+    std::cout << "Mas un incremento del 25% el cual es de: " << incremento(Salario) << std::endl;
+    std::cout << "Salario Total: " << Salario + incremento(Salario) << std::endl;
     std::cout << "--------------------------" << std::endl;
 
     return 0;
