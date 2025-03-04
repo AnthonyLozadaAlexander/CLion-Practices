@@ -24,7 +24,7 @@ int main() {
 
     for (int i = 1; i <= n; i++) {
         std::cout << "-------------------------------------" << std::endl;
-        std::cout << "Ingrese la nota No " << i << std::endl;
+        std::cout << "Ingrese la nota No [" << i <<"]" << std::endl;
         std::cin >> ca;
         acumulador = acumulador + ca;
         std::cout << "------------------------------------" << std::endl;
