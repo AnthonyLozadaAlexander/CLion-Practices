@@ -26,10 +26,32 @@ int main() {
         valid = false;
         }
         else {
-            std::cout << "Dato Ingresado Correctamente" << std::endl;
+            std::cout << "\nDato Ingresado Correctamente\n" << std::endl;
             valid = true;
         }
     }while (valid == false);
+
+    do {
+        std::cout << "Ingrese la nota 1: "; std::cin >> nota1;
+        std::cout << "Ingrese la nota 2: "; std::cin >> nota2;
+        std::cout << "Ingrese la nota 3: "; std::cin >> nota3;
+
+        if ((nota1 <= 0 || nota1 >= 10) || (nota2 <= 0 || nota2 >= 10) || (nota3 <= 0 || nota3 >= 10))
+        {
+            std::cout << "\nError: Las notas no pueden ser menores o iguales a 0" << std::endl;
+            std::cout << "Error: Vuelva a intentarlo\n" << std::endl;
+            valid = false;
+        }else {
+            std::cout << "\nDatos Ingresados Correctamente\n" << std::endl;
+            nota1 = nota1 * 0.30;
+            nota2 = nota2 * 0.30;
+            nota3 = nota3 * 0.40;
+            notaFinal = nota1 + nota2 + nota3;
+            valid = true;
+        }
+    }while(valid == false);
+
+    std::cout << "El Alumno " << name << " Tiene una Nota Final De: " << notaFinal << std::endl;
 
     return 0;
 }
