@@ -7,7 +7,7 @@
 int main() {
     // code
     int matriz[3][3];
-    std::cout << "Introduce los elementos de la matriz 3x3" << std::endl;
+    std::cout << "Introduce los elementos de la matriz 3x3\n" << std::endl;
     for (int f = 0; f < 3; f++)
     {
         std::cout << "Fila["<<f<<"]" << std::endl;
@@ -18,7 +18,7 @@ int main() {
         }
     }
     std::cout << "\n-------------------------" << std::endl;
-    std::cout << "Elementos de la matriz" << std::endl;
+    std::cout << "Elementos de la matriz\n" << std::endl;
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -28,7 +28,8 @@ int main() {
         std::cout << std::endl;
     }
     std::cout << "--------------------------\n" << std::endl;
-    std::cout << "   Diagonal Principal" << std::endl;
+    std::cout << "--------------------------" << std::endl;
+    std::cout << "   Diagonal Principal\n" << std::endl;
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
