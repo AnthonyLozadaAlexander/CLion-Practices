@@ -2,6 +2,7 @@
 // Created by zDefcon on 15/03/2025.
 //
 #include <iostream>
+#include <conio.h>
 
 int main() {
     // code
@@ -9,7 +10,7 @@ int main() {
                         4,5,6,
                         7,8,9};
 
-    std::cout << "Elementos de la matriz" << std::endl;
+    std::cout << "\nElementos de la matriz\n" << std::endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             std::cout << matrix[i][j] << " ";
@@ -17,5 +18,24 @@ int main() {
         std::cout << std::endl;
     }
 
-        return 0;
+    std::cout << "-----------------------------" << std::endl;
+    // cambio
+    for (int i = 0; i < 3; i++) {
+        std::cout << "Row["<<i<<"]" << std::endl;
+        for (int j = 0; j < 3; j++) {
+            matrix[j][i];
+            std::cout << "Column["<<j<<"] = " << matrix[j][i] << std::endl;
+        }
+    }
+
+    std::cout << "\nElementos de la matriz traspuesta\n" << std::endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            std::cout << matrix[j][i] << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    getch();
+    return 0;
 }
