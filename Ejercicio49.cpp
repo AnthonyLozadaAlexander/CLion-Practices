@@ -18,8 +18,9 @@ int main() {
         std::cout << std::endl;
     }
 
-    std::cout << "-----------------------------" << std::endl;
+    std::cout << "--------------------------------" << std::endl;
     // cambio
+    std::cout << "Traspuesta de la matriz" << std::endl;
     for (int i = 0; i < 3; i++) {
         std::cout << "Row["<<i<<"]" << std::endl;
         for (int j = 0; j < 3; j++) {
@@ -28,7 +29,8 @@ int main() {
         }
     }
 
-    std::cout << "\nElementos de la matriz traspuesta\n" << std::endl;
+    std::cout << "--------------------------------" << std::endl;
+    std::cout << "Elementos de la matriz traspuesta\n" << std::endl;
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             std::cout << matrix[j][i] << " ";
