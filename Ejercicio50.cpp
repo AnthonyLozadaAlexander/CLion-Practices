@@ -9,14 +9,14 @@ int main() {
     int nums[20][20], filas = 0, columnas = 0;
     char flag = 'F';
 
-    std::cout << "Ingrese el tamaño de las filas" << std::endl;
+    std::cout << "Ingrese el tamanio de las filas" << std::endl;
     std::cout << "-> ";
     std::cin >> filas;
-    std::cout << "Ingrese el tamaño de las columnas" << std::endl;
+    std::cout << "Ingrese el tamanio de las columnas" << std::endl;
     std::cout << "-> ";
     std::cin >> columnas;
     std::cout << "--------------------------------" << std::endl;
-    std::cout << "Ingrese los datos de la matriz";
+    std::cout << "Ingrese los datos de la matriz" << std::endl;
     for (int i = 0; i < filas; i++) {
         std::cout << "\nFila[" << i << "]" << std::endl;
         for (int j = 0; j < columnas; j++) {
@@ -46,10 +46,10 @@ int main() {
     }
 
     if (flag == 'V') {
-        std::cout << "La matriz es simetrica" << std::endl;
+        std::cout << "La matriz ingresada es simetrica" << std::endl;
     }
     else {
-        std::cout << "La matriz no es simetrica" << std::endl;
+        std::cout << "La matriz ingresada no es simetrica" << std::endl;
     }
     return 0;
 }
