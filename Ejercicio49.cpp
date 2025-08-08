@@ -22,10 +22,10 @@ int main() {
     // cambio
     std::cout << "Traspuesta de la matriz" << std::endl;
     for (int i = 0; i < 3; i++) {
-        std::cout << "Row["<<i<<"]" << std::endl;
-        for (int j = 0; j < 3; j++) {
-            matrix[j][i];
-            std::cout << "Column["<<j<<"] = " << matrix[j][i] << std::endl;
+        for (int j = i+1; j < 3; j++) {
+            int temp = matrix[i][j];
+            matrix[i][j] = matrix[j][i];
+            matrix[j][i] = temp;
         }
     }
 
