@@ -25,8 +25,18 @@ int main() {
     switch (opcion) {
         case 1:
             std::cout << "Dolares Ingresados: $" << dolares << std::endl;
-            std::cout << "Dolares a Euros: $" << conversionPesosMex(dolares) << std::endl;
+            std::cout << "Dolares a Euros: $" << conversionEuros(dolares) << std::endl;
         break;
+
+        case 2:
+            std::count << "Dolares Ingresados: $" << dolares << std::endl;
+            std::cout << "Dolares a Pesos Mexicanos: $" << conversionPesosMex(dolares) << std::endl;
+            break;
+
+        case 3:
+            std::cout << "Dolares Ingresados: $" << dolares << std
+            std::cout << "Dolares a Reales: $" << conversionReales(dolares) << std::endl;
+            break;
     }
     return 0;
 }
