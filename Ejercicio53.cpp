@@ -1,4 +1,7 @@
-﻿double conversionPesosMex(double dolares) {
+﻿#include <iostream>
+#include <ostream>
+
+double conversionPesosMex(double dolares) {
     return dolares * 20.50;
 }
 
@@ -15,7 +18,11 @@ int main() {
     double dolares = 0.0;
     int opcion = 0;
 
-    std::cout << "------------------BIENVENIDO----------------" << std::endl;
+    std::cout << "--------------------------------------------" << std::endl;
+    std::cout << "                 BIENVENIDO                 " << std::endl;
+    std::cout << "--------------------------------------------" << std::endl;
+    std::cout << "        Sistema Conversor de Monedas        " << std::endl;
+    std::cout << "--------------------------------------------" << std::endl;
     std::cout << " Ingrese la cantidad de Dolares a convertir: " << std::endl;
     if (!(std::cin >> dolares)) return 1;
     std::cout << "--------------------------------------------" << std::endl;
@@ -34,9 +41,13 @@ int main() {
             break;
 
         case 3:
-            std::cout << "Dolares Ingresados: $" << dolares << std
+            std::cout << "Dolares Ingresados: $" << dolares << std::endl;
             std::cout << "Dolares a Reales: $" << conversionReales(dolares) << std::endl;
             break;
     }
+
+    std::cout << "Ingrese cualquier tecla para finalizar..." << std::endl;
+    std::cin.get();
+
     return 0;
 }
