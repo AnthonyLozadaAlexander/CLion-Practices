@@ -36,7 +36,7 @@ int main() {
         break;
 
         case 2:
-            std::count << "Dolares Ingresados: $" << dolares << std::endl;
+            std::cout << "Dolares Ingresados: $" << dolares << std::endl;
             std::cout << "Dolares a Pesos Mexicanos: $" << conversionPesosMex(dolares) << std::endl;
             break;
 
