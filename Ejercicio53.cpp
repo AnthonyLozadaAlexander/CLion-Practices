@@ -25,7 +25,7 @@ int main() {
     std::cout << "-----------------------------------------------" << std::endl;
     std::cout << " Ingrese la cantidad de Dolares a convertir: ";
     if (!(std::cin >> dolares)) return 1;
-    std::cout << "--------------------------------------------" << std::endl;
+    std::cout << "-----------------------------------------------" << std::endl;
     std::cout << "Seleccione la moneda a la que desea convertir: " << std::endl;
     std::cout << "1 -> Euros\n" << "2 -> Pesos Mexicanos\n" << "3 -> Reales\n" << std::endl;
     if (!(std::cin >> opcion)) return 1;
