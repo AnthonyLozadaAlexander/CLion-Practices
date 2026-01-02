@@ -21,7 +21,7 @@ int main() {
     std::cout << "-----------------------------------------------" << std::endl;
     std::cout << "                   BIENVENIDO                 " << std::endl;
     std::cout << "-----------------------------------------------" << std::endl;
-    std::cout << "          Sistema Conversor de Monedas        " << std::endl;
+    std::cout << "          SISTEMA CONVERSOR DE MONEDAS        " << std::endl;
     std::cout << "-----------------------------------------------" << std::endl;
     std::cout << " Ingrese la cantidad de Dolares a convertir: ";
     if (!(std::cin >> dolares)) return 1;
