@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include <ostream>
+#include <limits>
 
 double conversionPesosMex(double dolares) {
     return dolares * 20.50;
@@ -44,9 +44,16 @@ int main() {
             std::cout << "Dolares Ingresados: $" << dolares << std::endl;
             std::cout << "Dolares a Reales: $" << conversionReales(dolares) << std::endl;
             break;
+
+        default:
+            std::cout << "Opcion Invalida. Por favor, seleccione una opcion valida." << std::endl;
+            break;
     }
 
-    std::cout << "Ingrese cualquier tecla para finalizar..." << std::endl;
+    // limpiar buffer
+    // Ignora todo hasta encontrar un salto de linea, para que el cin.get() funcione
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cout << "Ingrese ENTER para finalizar..." << std::endl;
     std::cin.get();
 
     return 0;
