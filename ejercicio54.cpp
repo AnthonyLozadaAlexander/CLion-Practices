@@ -8,7 +8,7 @@ bool esPrimo(int x) {
         return false;
     }
 
-    for (int k = 2; k < x; k++) {
+    for (int k = 2;k < x; k++) {
         if (x % k == 0) {
             return false;
         }
