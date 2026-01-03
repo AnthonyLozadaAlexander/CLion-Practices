@@ -1,4 +1,6 @@
-﻿float calcularTemperaturaMedia(float temperaturas[]) {
+﻿#include <iostream>
+
+float calcularTemperaturaMedia(float temperaturas[]) {
 float promedio = 0.0;
     for (int i = 0; i < 7; i++) {
         promedio = promedio + temperaturas[i];
@@ -8,6 +10,7 @@ float promedio = 0.0;
 }
 
 void listarTemperaturas(float temperaturas[]) {
+    int min , max;
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "           Temperaturas Ingresadas"              << std::endl;
     std::cout << "---------------------------------------------"  << std::endl;
@@ -19,6 +22,14 @@ void listarTemperaturas(float temperaturas[]) {
     std::cout << "               PROMEDIO TOTAL                " << std::endl;
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "Promedio Semanal: " << calcularTemperaturaMedia(temperaturas) << " °C" << std::endl;
+    std::cout << "---------------------------------------------" << std::endl;
+
+    for (int i = 0; i < 7; i++) {
+        if (temperaturas[i] < temperaturas[0]) {
+            min = temperaturas[i];
+            break;
+        }
+    }
 }
 
 
@@ -33,4 +44,5 @@ int main() {
         std::cin >> temperaturas[count];
         count++;
     }
+    listarTemperaturas(temperaturas);
 }
