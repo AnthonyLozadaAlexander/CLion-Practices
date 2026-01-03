@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <limits>
 
 float calcularTemperaturaMedia(float temperaturas[]) {
 float promedio = 0.0;
@@ -10,7 +11,8 @@ float promedio = 0.0;
 }
 
 void listarTemperaturas(float temperaturas[]) {
-    int min = 0 , max = 0;
+    int min = 0 , max = 0, diamin = 0, diamax = 0;
+
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "           Temperaturas Ingresadas"              << std::endl;
     std::cout << "---------------------------------------------"  << std::endl;
@@ -27,19 +29,19 @@ void listarTemperaturas(float temperaturas[]) {
     for (int i = 0; i < 7; i++) {
         if (temperaturas[i] < temperaturas[0]) {
             min = temperaturas[i];
-            break;
+            diamin = i;
         }
     }
 
     for (int i = 0; i < 7; i++) {
         if (temperaturas[i] > temperaturas[0]) {
             max = temperaturas[i];
-            break;
+            diamax = i;
         }
     }
 
-    std::cout << "Temperatura Minima: " << min << " °C"          << std::endl;
-    std::cout << "Temperatura Maxima: " << max << " °C"          << std::endl;
+    std::cout << "Dia["<< diamin << "] Temperatura Minima: " << min << " °C"          << std::endl;
+    std::cout << "Dia["<< diamax << "] Temperatura Maxima: " << max << " °C"          << std::endl;
     std::cout << "---------------------------------------------" << std::endl;
 
 }
