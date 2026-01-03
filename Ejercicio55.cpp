@@ -40,8 +40,8 @@ void listarTemperaturas(float temperaturas[]) {
         }
     }
 
-    std::cout << "Dia["<< diamin << "] Temperatura Minima: " << min << " °C"          << std::endl;
-    std::cout << "Dia["<< diamax << "] Temperatura Maxima: " << max << " °C"          << std::endl;
+    std::cout << "Dia["<< diamin + 1 << "] Temperatura Minima: " << min << " °C"          << std::endl;
+    std::cout << "Dia["<< diamax + 1 << "] Temperatura Maxima: " << max << " °C"          << std::endl;
     std::cout << "---------------------------------------------" << std::endl;
 
 }
