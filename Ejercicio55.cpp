@@ -12,8 +12,13 @@ void listarTemperaturas(float temperaturas[]) {
     std::cout << "           Temperaturas Ingresadas"              << std::endl;
     std::cout << "---------------------------------------------"  << std::endl;
     for (int i = 0; i < 7; i++) {
-
+        std::cout << "Dia ["<< i + 1 << "]\n"
+        << temperaturas[i] << " °C" << std::endl;
     }
+    std::cout << "---------------------------------------------" << std::endl;
+    std::cout << "               PROMEDIO TOTAL                " << std::endl;
+    std::cout << "---------------------------------------------" << std::endl;
+    std::cout << "Promedio Semanal: " << calcularTemperaturaMedia(temperaturas) << " °C" << std::endl;
 }
 
 
