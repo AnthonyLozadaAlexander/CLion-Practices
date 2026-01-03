@@ -8,8 +8,8 @@ float promedio = 0.0;
 }
 
 void listarTemperaturas(float temperaturas[]) {
-    std::count << "---------------------------------------------" << std::endl;
-    std::cout << "Las Temperaturas Ingresadas Son: "              << std::endl;
+    std::cout << "---------------------------------------------" << std::endl;
+    std::cout << "           Temperaturas Ingresadas"              << std::endl;
     std::cout << "---------------------------------------------"  << std::endl;
     for (int i = 0; i < 7; i++) {
 
