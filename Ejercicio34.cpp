@@ -14,7 +14,7 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         cout << "----------------------------------------" << endl;
-        cout << "Digite el numero en el Indicie[" << i << "] : " << endl;
+        cout << "Digite el numero en el Indice[" << i << "] : " << endl;
         cin >> numeros[i];
         cout << "----------------------------------------" << endl;
     }
