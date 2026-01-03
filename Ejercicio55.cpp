@@ -30,6 +30,18 @@ void listarTemperaturas(float temperaturas[]) {
             break;
         }
     }
+
+    for (int i = 0; i < 7; i++) {
+        if (temperaturas[i] > temperaturas[0]) {
+            max = temperaturas[i];
+            break;
+        }
+    }
+
+    std::cout << "Temperatura Minima: " << min << " °C"          << std::endl;
+    std::cout << "Temperatura Maxima: " << max << " °C"          << std::endl;
+    std::cout << "---------------------------------------------" << std::endl;
+
 }
 
 
