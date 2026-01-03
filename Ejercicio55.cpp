@@ -10,7 +10,7 @@ float promedio = 0.0;
 }
 
 void listarTemperaturas(float temperaturas[]) {
-    int min , max;
+    int min = 0 , max = 0;
     std::cout << "---------------------------------------------" << std::endl;
     std::cout << "           Temperaturas Ingresadas"              << std::endl;
     std::cout << "---------------------------------------------"  << std::endl;
@@ -57,6 +57,8 @@ int main() {
         std::cin >> temperaturas[count];
         count++;
     }
-
     listarTemperaturas(temperaturas);
+    std::cout << "Ingrese ENTER para Finalizar" << std::endl;
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    std::cin.get();
 }
